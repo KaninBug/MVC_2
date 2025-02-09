@@ -2,13 +2,13 @@ import java.util.ArrayList;
 
 public class PetInformation {
     private DataSet data = new DataSet();
-    private String foodID;
+    private String petID;
     private PetType type;
     private String dateCheckHelth;
     private int vaccin;
 
     public PetInformation(String i, PetType t, String d, int v) {
-        foodID = i;
+        petID = i;
         type = t;
         dateCheckHelth = d;
         vaccin = v;

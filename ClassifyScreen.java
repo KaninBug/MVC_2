@@ -10,8 +10,8 @@ public class ClassifyScreen {
     private JButton confirm;
     private JLabel title;
 
-    private JLabel labelFoodID;
-    private JTextField textFoodID;
+    private JLabel labelPetID;
+    private JTextField textPetID;
 
     private JLabel labelPetType;
     private JTextField textPetType;
@@ -39,16 +39,16 @@ public class ClassifyScreen {
         classifyJFrame.add(title);
 
 
-        // Set "FoodID" Part
-        labelFoodID = new JLabel("Food ID : ");
-        labelFoodID.setBounds(600, 200, 800, 100);
-        labelFoodID.setFont(new Font(null, Font.PLAIN, 25));
-        classifyJFrame.add(labelFoodID);
+        // Set "PetID" Part
+        labelPetID = new JLabel("Food ID : ");
+        labelPetID.setBounds(600, 200, 800, 100);
+        labelPetID.setFont(new Font(null, Font.PLAIN, 25));
+        classifyJFrame.add(labelPetID);
 
-        textFoodID = new JTextField();
-        textFoodID.setBounds(720, 225, 250, 50);
-        textFoodID.setFont(new Font(null, Font.PLAIN, 25));
-        classifyJFrame.add(textFoodID);
+        textPetID = new JTextField();
+        textPetID.setBounds(720, 225, 250, 50);
+        textPetID.setFont(new Font(null, Font.PLAIN, 25));
+        classifyJFrame.add(textPetID);
 
 
         // Set "PetType" Part
