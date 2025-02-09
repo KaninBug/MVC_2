@@ -17,6 +17,12 @@ public class ClassifyScreen {
     private JTextField textPetType;
     private JButton buttonPetType;
 
+    private JLabel labelDateCheckHelth;
+    private JTextField textDateCheckHelth;
+
+    private JLabel labelVaccin;
+    private JTextField textVaccinn;
+
     public ClassifyScreen() {
         // Setting "classifyJFrame" JFrame
         classifyJFrame = new JFrame("Classify process");
@@ -40,8 +46,8 @@ public class ClassifyScreen {
 
 
         // Set "PetID" Part
-        labelPetID = new JLabel("Food ID : ");
-        labelPetID.setBounds(600, 200, 800, 100);
+        labelPetID = new JLabel("Pet ID : ");
+        labelPetID.setBounds(630, 200, 800, 100);
         labelPetID.setFont(new Font(null, Font.PLAIN, 25));
         classifyJFrame.add(labelPetID);
 
@@ -67,6 +73,29 @@ public class ClassifyScreen {
         buttonPetType.setFont(new Font(null, Font.PLAIN, 25));
         buttonPetType.setFocusPainted(false);
         classifyJFrame.add(buttonPetType);
+
+        // Set "DateCheckHelth" Part
+        labelDateCheckHelth = new JLabel("Date Check Helth : ");
+        labelDateCheckHelth.setBounds(500, 400, 800, 100);
+        labelDateCheckHelth.setFont(new Font(null, Font.PLAIN, 25));
+        classifyJFrame.add(labelDateCheckHelth);
+
+        textDateCheckHelth = new JTextField();
+        textDateCheckHelth.setBounds(720, 425, 250, 50);
+        textDateCheckHelth.setFont(new Font(null, Font.PLAIN, 25));
+        classifyJFrame.add(textDateCheckHelth);
+
+
+        // Set "Vaccin" Part
+        labelVaccin = new JLabel("Number of Vaccin : ");
+        labelVaccin.setBounds(500, 500, 800, 100);
+        labelVaccin.setFont(new Font(null, Font.PLAIN, 25));
+        classifyJFrame.add(labelVaccin);
+
+        textVaccinn = new JTextField();
+        textVaccinn.setBounds(720, 525, 250, 50);
+        textVaccinn.setFont(new Font(null, Font.PLAIN, 25));
+        classifyJFrame.add(textVaccinn);
 
 
         // Set "confirm" JButton
@@ -94,9 +123,5 @@ public class ClassifyScreen {
                 textPetType.setText("A");
             }
         }
-    }
-
-    public static void main(String[] args) {
-        ClassifyScreen c = new ClassifyScreen();
     }
 }
